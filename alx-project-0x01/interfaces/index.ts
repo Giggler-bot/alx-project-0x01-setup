@@ -24,3 +24,29 @@ export interface UserProps {
     zipcode: string;
   };
 }
+
+export interface PostData {
+  userId: number;
+  title: string;
+  body: string;
+  id?: number;
+}
+
+export interface PostModalProps {
+  onClose: () => void;
+  onSubmit: (post: PostData) => void;
+}
+
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+}
+
+export interface UserModalProps {
+  onClose: () => void;
+  onSubmit: (post: UserProps) => void;
+}
+
+
+
